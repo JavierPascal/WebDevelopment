@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(240, 239, 239);
+    font-family: "Poppins", sans-serif;
+    background: rgb(33,147,176);
+    background: linear-gradient(90deg, rgba(33,147,176,1) 0%, rgba(109,213,237,1) 51%);
+    
+}
+
+.page-container {
+    background: #fff;
+    width: 50rem;
+    padding: 3rem;
+    padding-top: 1rem;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+}
+
+.card {
+    position:relative;
+    margin-bottom: 1rem;
+}
+
+.card.top{
+    height: 15vh;
+    text-align: center;
+    padding: 10px;
+}
+
+.card.color-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color:rgb(33,147,176);
+}
