@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multipart-form</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../script/script.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="card title">
+                <div class="card-body">
+                    <h2>Inscripciones Hackaton Digital</h2>
+                </div>
+            </div>
+            <div class="card color-top">
+                <div class="card-body">
+                    <h1>Hackaton Digital 2021</h1>
+                    <p><span class="obligatorio">*obligatorio</span></p>
+                </div>
+            </div>
+            <div class="card form text-color-top">
+                <div class="text-color-top-text">
+                    <h4>Queremos conocerte</h4>
+                </div>
+                <div class="card-body">
+                    <h4>¿Cuál es tu nombre?<span class="obligatorio">*</span></h4>
+                    <p class="small">Tus nombres, apellido paterno y materno</p>
+                    <input class="input-text" type="text" id="name_input" placeholder="tu nombre">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿Qué edad tienes?<span class="obligatorio">*</span></h4>
+                    <input class="input-text" type="text" id="age_input" placeholder="edad">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>Tu matricula<span class="obligatorio">*</span></h4>
+                    <p class="small">A0xxxxxxx</p>
+                    <input class="input-text" type="text" id="matricula_input" placeholder="matricula">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿Dónde resides actualmente?<span class="obligatorio">*</span></h4>
+                    <p class="small">Indicanos tu region y ciudad</p>
+                    <input class="input-text" type="text" id="living_place_input" placeholder="tu respuesta">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿A qué te dedicas?<span class="obligatorio">*</span></h4>
+                    <input class="input-radio" type="radio" name="profession_form" value="universitario/a"> Universitario/a<br>
+                    <input class="input-radio" type="radio" name="profession_form" value="lider de comunidad"> Lider de comunidad <br>
+                    <input class="input-radio" type="radio" name="profession_form" value="emprendedor/a"> soy emprendedor/a <br>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="second-button-next" onclick="goBack()">Anterior</button>
+                <button class="button" id="second-button-back" onclick="second_page_next_button()">Próxima</button>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

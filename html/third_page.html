@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multipart-form</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../script/script.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="card title">
+                <div class="card-body">
+                    <h2>Inscripciones Hackaton Digital</h2>
+                </div>
+            </div>
+            <div class="card color-top">
+                <div class="card-body">
+                    <h1 >Hackaton Digital 2021</h1>
+                    <p><span class="obligatorio">*obligatorio</span></p>
+                </div>
+            </div>
+            <div class="card form text-color-top">
+                <div class="text-color-top-text">
+                    <h4 id="output"></h4>
+                </div>
+                <div class="card-body">
+                    <h4>¿A qué instituto/Universidad asistes actualmente?<span class="obligatorio">*</span></h4>
+                    <p class="small">Indícanos el nombre de la institución y sede</p>
+                    <input class="input-text" type="text" id="university_input" placeholder="tu instituto/Universidad">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿Qué carrera y año estás cursando?<span class="obligatorio">*</span></h4>
+                    <input class="input-text" type="text" id="career_year_input" placeholder="carrera y año">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿Cuál es tu número de teléfono?<span class="obligatorio">*</span></h4>
+                    <p class="small">5528461144</p>
+                    <input class="input-text" type="text" id="phone_input" placeholder="phone">
+                </div>
+            </div>
+            <div class="card form">
+                <div class="card-body">
+                    <h4>¿Cuál es tu motivación para participar en el hackathon?<span class="obligatorio">*</span></h4>
+                    <input class="input-text" type="text" id="motivation_input" placeholder="motivación">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="second-button-next" onclick="goBack()">Anterior</button>
+                <button class="button" id="second-button-back" onclick="third_page_next_button()">Próxima</button>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
