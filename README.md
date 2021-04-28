@@ -1,2 +1,2 @@
 # WebDevelopment
-Desarrollo de Aplicaciones Web
+Proyecto final Desarrollo Web. Un clon de la página Domestika.
