@@ -5,16 +5,71 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebFlix</title>
-    </head>
-    <body>
-        <header class="page-header">
-            <nav>
-                
-            </nav>
-        </header>
-        <div class="main">
-
-        </div>
+        <link rel="stylesheet" href="../style_general.css">
+        <script src="../script_general.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
         
+    </head>
+
+    <body>
+        <div class="navbar" id="navbar">
+                
+            <a href="">Home</a>
+            <a href="">Cursos</a>
+            <a href="">Prueba</a>
+        </div>
+        <div class="page-container">
+            <div class = "section personas">
+                <p><b>La comunidad de la clase creativa</b></p>
+                <p>La mayor comunidad online de creativos, una red formada por más de 5M profesionales <br>con los que podrás intercambiar conocimientos</p>
+                <div class="row">
+                    <div class="column small">
+                        <div class="personcard">
+                            <div class="card-person">
+                                <img src="../img/person.jpeg" alt="persona">
+                            </div>
+                            <div class="card-person type">
+                                <h5>PROFESOR</h5>
+                            </div>
+                            <img src="../img/curso.png" alt="Avatar" style="width:100%">
+                            <div class="card-body">
+                                <h4>Andrea Aguilar</h4>
+                                <span style="color: grey;"><h5>Estado de México</h5></span>
+                            </div>
+                            <div class="card-footer">
+                                <h5>3890 seguidores</h5>
+                                <button class="button" id="follow_1" onclick="seguir(this.id)">+ seguir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class = "section cursos">
+                <div class="row">
+                    <div class="column">
+                        <div class="personcard">
+                            <img src="../img/curso.png" alt="Avatar" style="width:100%">
+                            <div class="card-body">
+                                <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
+                                <span style="color: rgb(61, 61, 61);"><h4>Un curso de Daniel Trejo</h4></span>
+                                <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
+                                <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
+                                <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
+                                
+                                <button class="button blue" id="follow_6" onclick="seguir(this.id)"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+            
     </body>
+
 </html>
