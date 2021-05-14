@@ -1,11 +1,10 @@
 * { padding: 0; margin: 0; }
-
+body {
+    font: Verdana, Arial, sans-serif;
+}
 .section {
-    background: #fff;
-    padding: 5rem 15rem;
-    margin: 1rem auto;
-    margin-bottom: 0;
-    border-radius: 0.5rem;
+    background-color: #bbb1a1;
+    padding: 2.5rem 15rem;
 }
 
 .navbar {
@@ -14,7 +13,7 @@
     top: 0; 
     width: 100%; 
     transition: top 0.3s;
-    padding: 0px 5rem ;
+    padding: 0px 20rem ;
     z-index: 10000;
 }  
 
@@ -36,7 +35,9 @@
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    background-color: white;
 }
+
 
 .personcard img {
     height: 200px;
@@ -149,4 +150,71 @@
 .button.blue:hover {
     background-color: rgb(42, 100, 107);
     color: white;
+}
+
+.section.main-image {
+    position: relative;
+    height: 60vh;
+    background-color: #9e4040;
+    background-position: 0px 0px;
+    background-size: auto;
+}
+
+.main-img-content {
+    position: absolute;
+    left: 15%;
+    top: auto;
+    right: auto;
+    bottom: 40%;
+    width: 40%;
+}
+
+.main-img-buttons {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 48px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.section.icons {
+    background-color: hsla(37, 0.00%, 100.00%, 1.00);
+}
+
+.grid-icons {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.svg {
+    max-width: 8%;
+}
+
+.icon-container-text {
+    padding-left: 5%;
+}
+
+.grid-persons {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
 }
