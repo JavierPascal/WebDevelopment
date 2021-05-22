@@ -1,9 +1,13 @@
 .section.main-image {
     position: relative;
     height: 60vh;
-    background-color: #9e4040;
+    background-color: rgba(229,38,30,255);
     background-position: 0px 0px;
     background-size: auto;
+    background-image: url(../img/Webflix_Slider.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-img-content {
@@ -63,4 +67,19 @@
     grid-row-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+}
+
+.grid.footer{
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+    color: rgba(107, 107, 107, 0.932);
+}
+
+.grid.footer a{
+    color: rgba(107, 107, 107, 0.932);
+
+}
+
+.grid.footer a:hover{
+    color: rgba(229,38,30,255);
+
 }
