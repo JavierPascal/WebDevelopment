@@ -16,7 +16,7 @@ function seguir(id) // no ';' here
 
     var elem = document.getElementById(id);
     if (elem.innerHTML == "+ seguir"){
-        elem.innerHTML = "✓ sugiendo";
+        elem.innerHTML = "✓ siguiendo";
         elem.style.backgroundColor = "#FF5733"
     } 
     else {
