@@ -1,433 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebFlix</title>
-        <link rel="stylesheet" href="../style_general.css">
-        <script src="../script_general.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
-        <script src="https://kit.fontawesome.com/996973c893.js"></script>
-        
-    </head>
 
-    <body>
-        <div class="navbar" id="navbar">
-            <a href="">
-            <img style="border:0;" alt="WebFlix" src="../img/itech.svg" width="100" height="15">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFlix</title>
+    <link rel="stylesheet" href="../style_general.css">
+    <script src="../script_general.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+    <!-- Boostrap for the modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar-sticky" id="navbar-sticky">
+        <a href="">
+            <img style="border:0;" alt="WebFlix" src="../img/itech.svg" width="100" height="15">
             <a href="">Home</a>
             <a href="">Cursos</a>
             <a href="">Prueba</a>
+    </div>
+    <div class="page-container">
+        <div class="section main-image">
+            <div class="main-img-content">
+                <h1 style="color: white;">Webflix es la comunidad de desarrollo web que estabas buscando.</h1>
+                <h3 style="color: white;">Aprende con los mejores profesionales y forma partede la mayor comunidad para
+                    desarrolladores web.</h3>
+                <div class="main-img-buttons">
+                    <button class="button big-white" onClick="document.getElementById('cursos').scrollIntoView();">Ver
+                        los cursos</button>
+                    <button class="button big-white" data-toggle="modal" data-target="#myModal">Crea una cuenta</button>
+                </div>
+            </div>
         </div>
-        <div class="page-container">
-            <div class="section main-image">
-                <div class="main-img-content">
-                    <h1 style="color: white;">Webflix es la comunidad de desarrollo web que estabas buscando.</h1>
-                    <h3 style="color: white;">Aprende con los mejores profesionales y forma partede la mayor comunidad para desarrolladores web.</h3>
-                    <div class="main-img-buttons">
-                        <button class="button big-white" onClick="document.getElementById('cursos').scrollIntoView();">Ver los cursos</button>
-                        <button class="button big-white">Crea una cuenta</button>
-                    </div>
+        <div class="section grid" id="cursos" style="background-color: #f2f2f2;">
+            <div
+                style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1">
+                <h1>Aprende participando</h1>
+                <h3 style="color: grey;">Accede a los mejores cursos online para desarrollo web.</h3>
+            </div>
+            <div class="personcard">
+                <img src="../img/html&css.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Miranda Santino</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando
+                        técnicas básicas de desarollo web...</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 148921</i>
+                    <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
+
+                </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">70% de descuento <span
+                            style="text-decoration: line-through;">$799 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $209 MXN</button>
                 </div>
             </div>
-            <div class="section grid" id="cursos" style="background-color: #f2f2f2;">
-                <div style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1">
-                    <h1>Aprende participando</h1>
-                    <h3 style="color: grey;">Accede a los mejores cursos online para desarrollo web.</h3>
+            <div class="personcard">
+                <img src="../img/Intro JS.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Introducción a JavaScript</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Miguel Aramburo</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Iníciate en el lenguaje de programación
+                        esencial para la creación de webs...</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 7098</i>
+                    <i class="far fa-thumbs-up icon"> 99% (226)</i>
+
                 </div>
-                <div class="personcard">
-                    <img src="../img/html&css.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Miranda Santino</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
-                        <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/Intro JS.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Introducción a JavaScript</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Miguel Aramburo</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Iníciate en el lenguaje de programación esencial para la creación de webs...</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 7098</i>
-                        <i class="far fa-thumbs-up icon"> 99% (226)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">78% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $169 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/UX.jpeg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">UX: Usabilidad y Experiencia de Usuario</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Salvador Ernesto</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza el diseño conceptual de una página web...</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 2619</i>
-                        <i class="far fa-thumbs-up icon"> 75% (204)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">55% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $339 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/django.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Desarrollo Web Backend en Python con Django Framework</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Emma Jane Palin</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">¿Estás listo para aprender Django y controlar la Web Backend con Python como nunca habías imaginado?</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 6908</i>
-                        <i class="far fa-thumbs-up icon"> 98% (92)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">71% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $219 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/Diseño-de-interfaces.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Diseño de interfaces para sitios web y aplicaciones</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Francisco Aguilera G.</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende la teoría y la práctica para crear interfaces funcionales para usuarios de productos digitales</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 2082</i>
-                        <i class="far fa-thumbs-up icon"> 99% (137)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/E-comerce.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">E-commerce: lanza tu negocio online</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Karla Covarrubias</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende a crear y administrar tu primera tienda online, trasladando tus negocios al mundo digital</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 1878</i>
-                        <i class="far fa-thumbs-up icon"> 95% (59)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">75% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $189 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/PS.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Adobe Photoshop para diseño web</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de Arturo Servín</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende a diseñar y maquetar páginas responsive de manera sencilla</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 9357</i>
-                        <i class="far fa-thumbs-up icon"> 99% (252)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">78% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $169 MXN</button>
-                    </div>
-                </div>
-                <div class="personcard">
-                    <img src="../img/Teoria del color.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 10px;">Teoría del color aplicada a proyectos online</h3>
-                        <span style="color: rgb(61, 61, 61);"><h4>Un curso de James Eccleston</h4></span>
-                        <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende la ciencia que hay detrás del color. Crea diseños digitales atractivos y consistentes para...</p>
-                        <i style="margin-right: 5px;" class="far fa-user icon"> 1411</i>
-                        <i class="far fa-thumbs-up icon"> 100% (77)</i>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <h5 style="color: rgb(255, 91, 91)">38% de descuento <span style="text-decoration: line-through;">$759 MXN</span></h5>
-                        
-                        <button class="button blue"><i class="fas fa-shopping-cart"></i> $469 MXN</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">78% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $169 MXN</button>
                 </div>
             </div>
-            <div class="section icons grid-icons">
-                <h1 style="grid-column-start: span 2; grid-column-end: span 2; grid-row-start: span 1; grid-row-end: span 1; justify-self: center;">Así son los cursos de WebFlix</h1>
-                <div class="icon-container">
-                    <i class="fa fa-smile-o icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Aprende a tu ritmo</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Disfruta de los cursos desde casa, sin horarios ni entregas. Tú marcas tu propia agenda.</p>
-                    </div>
+            <div class="personcard">
+                <img src="../img/UX.jpeg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">UX: Usabilidad y Experiencia de Usuario</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Salvador Ernesto</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza el diseño conceptual de una página
+                        web...</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 2619</i>
+                    <i class="far fa-thumbs-up icon"> 75% (204)</i>
+
                 </div>
-                <div class="icon-container">
-                    <i class="fa fa-laptop icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">En primera fila</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Vídeos de máxima calidad para que no pierdas detalle. Y como el acceso es ilimitado, puedes verlos una y otra vez.</p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-thumbs-o-up icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">De la mano del profesor</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Aprende técnicas y métodos de gran valor explicados por los grandes expertos del sector creativo.</p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-users icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Comparte conocimiento</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Expón tus dudas, pide feedback, aporta soluciones. Comparte el aprendizaje con el resto de los alumnos de la comunidad.</p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-user-plus icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Profesores expertos</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Cada profesor imparte solo lo que mejor sabe hacer, asegurando transmitir la pasión y la excelencia en cada lección.</p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-crown icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Comunidad creativa</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Más de 5M de desarrolladores y creciendo. WebFlix es el entorno ideal para compartir y aprender lo que te apasiona.</p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fas fa-chess-queen icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Certificado</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Acredita tu asistencia al curso con un certificado firmado por el profesor. </p>
-                    </div>
-                </div>
-                <div class="icon-container">
-                    <i class="fa fa-check-double icon-grey"></i>
-                    <div class="icon-container-text">
-                        <h3 style="margin-top: 20px; margin-bottom: 10px;">Cursos producidos profesionalmente</h3>
-                        <p style="margin-top: 10px; margin-bottom: 10px;">Seleccionamos a los mejores creativos y un equipo profesional produce el curso con ellos. El resultado: sentirás que trabajas mano a mano con los mejores.</p>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">55% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $339 MXN</button>
                 </div>
             </div>
-            <div class="section grid-persons" style="background-color: #f2f2f2;">
-                <div style="grid-column-start: span 5; grid-column-end: span 5; grid-row-start: span 1; grid-row-end: span 1">
-                    <h1>La comunidad de la clase creativa</h1>
-                    <h3 style="color: grey">La mayor comunidad online de creativos, una red formada por más de 5M profesionalescon los que podrás intercambiar conocimientos</h3>
+            <div class="personcard">
+                <img src="../img/django.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Desarrollo Web Backend en Python con Django Framework</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Emma Jane Palin</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">¿Estás listo para aprender Django y
+                        controlar la Web Backend con Python como nunca habías imaginado?</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 6908</i>
+                    <i class="far fa-thumbs-up icon"> 98% (92)</i>
+
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p1-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p1-top-img.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Edu Gómez</h4>
-                        <span style="color: grey;"><h5>Madrid, España</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>40477 seguidores</h5>
-                        <button class="button" id="follow_1" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">71% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $219 MXN</button>
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p2-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p2-top-img.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Ruano Rivera</h4>
-                        <span style="color: grey;"><h5>Bogotá, Colombia</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>2794 seguidores</h5>
-                        <button class="button" id="follow_2" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+            </div>
+            <div class="personcard">
+                <img src="../img/Diseño-de-interfaces.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Diseño de interfaces para sitios web y aplicaciones</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Francisco Aguilera G.</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende la teoría y la práctica para crear
+                        interfaces funcionales para usuarios de productos digitales</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 2082</i>
+                    <i class="far fa-thumbs-up icon"> 99% (137)</i>
+
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p3-img-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p3-top-img.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Gonzalo Ibáñez</h4>
-                        <span style="color: grey;"><h5>Santiago, Chile</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>2564 seguidores</h5>
-                        <button class="button" id="follow_3" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">70% de descuento <span
+                            style="text-decoration: line-through;">$799 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $209 MXN</button>
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p4-avatar.jpeg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p4-img-top.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Willian Santiago</h4>
-                        <span style="color: grey;"><h5>Londrina, Brasil</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>11587 seguidores</h5>
-                        <button class="button" id="follow_4" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+            </div>
+            <div class="personcard">
+                <img src="../img/E-comerce.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">E-commerce: lanza tu negocio online</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Karla Covarrubias</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende a crear y administrar tu primera
+                        tienda online, trasladando tus negocios al mundo digital</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 1878</i>
+                    <i class="far fa-thumbs-up icon"> 95% (59)</i>
+
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p5-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p5-img-top.png" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Andrea Aguilar</h4>
-                        <span style="color: grey;"><h5>Estado de México, México</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>50421 seguidores</h5>
-                        <button class="button" id="follow_5" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">75% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $189 MXN</button>
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p6-img-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p6-img-top.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Sole Otero</h4>
-                        <span style="color: grey;"><h5>Angulema, Francia</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>3890 seguidores</h5>
-                        <button class="button" id="follow_6" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+            </div>
+            <div class="personcard">
+                <img src="../img/PS.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Adobe Photoshop para diseño web</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de Arturo Servín</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende a diseñar y maquetar páginas
+                        responsive de manera sencilla</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 9357</i>
+                    <i class="far fa-thumbs-up icon"> 99% (252)</i>
+
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p7-avatar.jpeg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p7-img-top.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Galamot Shaku</h4>
-                        <span style="color: grey;"><h5>Ciudad de México, México</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>2918 seguidores</h5>
-                        <button class="button" id="follow_7" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">78% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $169 MXN</button>
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p8-avatar.png" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p8-img-top.png" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Pamela Barbieri</h4>
-                        <span style="color: grey;"><h5>Buenos Aires, Argentina</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>13241 seguidores</h5>
-                        <button class="button" id="follow_8" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+            </div>
+            <div class="personcard">
+                <img src="../img/Teoria del color.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h3 style="margin-bottom: 10px;">Teoría del color aplicada a proyectos online</h3>
+                    <span style="color: rgb(61, 61, 61);">
+                        <h4>Un curso de James Eccleston</h4>
+                    </span>
+                    <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Aprende la ciencia que hay detrás del
+                        color. Crea diseños digitales atractivos y consistentes para...</p>
+                    <i style="margin-right: 5px;" class="far fa-email icon"> 1411</i>
+                    <i class="far fa-thumbs-up icon"> 100% (77)</i>
+
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p9-avatar.jpg" alt="persona">
-                    </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
-                    </div>
-                    <img src="../img/p9-img-top.jpg" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Steve Simpsonr</h4>
-                        <span style="color: grey;"><h5>Dublín, Irlanda</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>1134 seguidores</h5>
-                        <button class="button" id="follow_9" onclick="seguir(this.id)">+ seguir</button>
-                    </div>
+                <div class="card-footer">
+                    <h5 style="color: rgb(255, 91, 91)">38% de descuento <span
+                            style="text-decoration: line-through;">$759 MXN</span></h5>
+
+                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-shopping-cart"></i> $469 MXN</button>
                 </div>
-                <div class="personcard two">
-                    <div class="card-person">
-                        <img src="../img/p10-avatar.png" alt="persona">
+            </div>
+        </div>
+        <div class="section icons grid-icons">
+            <h1
+                style="grid-column-start: span 2; grid-column-end: span 2; grid-row-start: span 1; grid-row-end: span 1; justify-self: center;">
+                Así son los cursos de WebFlix</h1>
+            <div class="icon-container">
+                <i class="fa fa-smile-o icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Aprende a tu ritmo</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Disfruta de los cursos desde casa, sin horarios ni
+                        entregas. Tú marcas tu propia agenda.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-laptop icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">En primera fila</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Vídeos de máxima calidad para que no pierdas
+                        detalle. Y como el acceso es ilimitado, puedes verlos una y otra vez.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-thumbs-o-up icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">De la mano del profesor</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Aprende técnicas y métodos de gran valor
+                        explicados por los grandes expertos del sector creativo.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-emails icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Comparte conocimiento</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Expón tus dudas, pide feedback, aporta soluciones.
+                        Comparte el aprendizaje con el resto de los alumnos de la comunidad.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-email-plus icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Profesores expertos</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Cada profesor imparte solo lo que mejor sabe
+                        hacer, asegurando transmitir la pasión y la excelencia en cada lección.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-crown icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Comunidad creativa</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Más de 5M de desarrolladores y creciendo. WebFlix
+                        es el entorno ideal para compartir y aprender lo que te apasiona.</p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-chess-queen icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Certificado</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Acredita tu asistencia al curso con un certificado
+                        firmado por el profesor. </p>
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa fa-check-double icon-grey"></i>
+                <div class="icon-container-text">
+                    <h3 style="margin-top: 20px; margin-bottom: 10px;">Cursos producidos profesionalmente</h3>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Seleccionamos a los mejores creativos y un equipo
+                        profesional produce el curso con ellos. El resultado: sentirás que trabajas mano a mano con los
+                        mejores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section grid-persons" style="background-color: #f2f2f2;">
+            <div
+                style="grid-column-start: span 5; grid-column-end: span 5; grid-row-start: span 1; grid-row-end: span 1">
+                <h1>La comunidad de la clase creativa</h1>
+                <h3 style="color: grey">La mayor comunidad online de creativos, una red formada por más de 5M
+                    profesionalescon los que podrás intercambiar conocimientos</h3>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p1-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p1-top-img.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Edu Gómez</h4>
+                    <span style="color: grey;">
+                        <h5>Madrid, España</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>40477 seguidores</h5>
+                    <button class="button" id="follow_1" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p2-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p2-top-img.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Ruano Rivera</h4>
+                    <span style="color: grey;">
+                        <h5>Bogotá, Colombia</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>2794 seguidores</h5>
+                    <button class="button" id="follow_2" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p3-img-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p3-top-img.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Gonzalo Ibáñez</h4>
+                    <span style="color: grey;">
+                        <h5>Santiago, Chile</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>2564 seguidores</h5>
+                    <button class="button" id="follow_3" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p4-avatar.jpeg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p4-img-top.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Willian Santiago</h4>
+                    <span style="color: grey;">
+                        <h5>Londrina, Brasil</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>11587 seguidores</h5>
+                    <button class="button" id="follow_4" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p5-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p5-img-top.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Andrea Aguilar</h4>
+                    <span style="color: grey;">
+                        <h5>Estado de México, México</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>50421 seguidores</h5>
+                    <button class="button" id="follow_5" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p6-img-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p6-img-top.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Sole Otero</h4>
+                    <span style="color: grey;">
+                        <h5>Angulema, Francia</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>3890 seguidores</h5>
+                    <button class="button" id="follow_6" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p7-avatar.jpeg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p7-img-top.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Galamot Shaku</h4>
+                    <span style="color: grey;">
+                        <h5>Ciudad de México, México</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>2918 seguidores</h5>
+                    <button class="button" id="follow_7" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p8-avatar.png" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p8-img-top.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Pamela Barbieri</h4>
+                    <span style="color: grey;">
+                        <h5>Buenos Aires, Argentina</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>13241 seguidores</h5>
+                    <button class="button" id="follow_8" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p9-avatar.jpg" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p9-img-top.jpg" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Steve Simpsonr</h4>
+                    <span style="color: grey;">
+                        <h5>Dublín, Irlanda</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>1134 seguidores</h5>
+                    <button class="button" id="follow_9" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+            <div class="personcard two">
+                <div class="card-person">
+                    <img src="../img/p10-avatar.png" alt="persona">
+                </div>
+                <div class="card-person type">
+                    <h5>PROFESOR</h5>
+                </div>
+                <img src="../img/p10-img-top.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <h4>Felipe Novoa (FEN)</h4>
+                    <span style="color: grey;">
+                        <h5>Bogotá, Colombia</h5>
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <h5>4435 seguidores</h5>
+                    <button class="button" id="follow_10" onclick="seguir(this.id)" data-toggle="modal"
+                        data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="section grid footer">
+
+            <div class="footer-column">
+                <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
+                <ul style="list-style-type:none;">
+                    <li><a href="">HTML y CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">MySQL</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
+                <ul style="list-style-type:none;">
+                    <li><a href="">HTML y CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">MySQL</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"
+                style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1; margin-top:30px">
+                <h5>© Webflix 2021</h5>
+            </div>
+
+        </div>
+        <!-- Trigger the modal with a button -->
+        <button data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">WebFlix</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="card-person type">
-                        <h5>PROFESOR</h5>
+                    <div class="modal-body">
+                        <h4 style="margin-bottom: 20px;">Entra con tu correo:</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">email:</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="col-form-label">username:</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">password:</label>
+                                <input type="password" class="form-control" id="password"></input>
+                            </div>
+                        </form>
                     </div>
-                    <img src="../img/p10-img-top.png" alt="Avatar" style="width:100%">
-                    <div class="card-body">
-                        <h4>Felipe Novoa (FEN)</h4>
-                        <span style="color: grey;"><h5>Bogotá, Colombia</h5></span>
-                    </div>
-                    <div class="card-footer">
-                        <h5>4435 seguidores</h5>
-                        <button class="button" id="follow_10" onclick="seguir(this.id)">+ seguir</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="save_user()">Entra</button>
                     </div>
                 </div>
 
             </div>
-            <div class="section grid footer">
-                
-                <div class="footer-column">
-                    <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
-                    <ul style="list-style-type:none;">
-                        <li><a href="">HTML y CSS</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">MySQL</a></li>
-                    </ul>  
-                </div>
-                <div class="footer-column">
-                    <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
-                    <ul style="list-style-type:none;">
-                        <li><a href="">HTML y CSS</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">MySQL</a></li>
-                    </ul>  
-                </div>
-                
-                <div class="footer-column" style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1; margin-top:30px">
-                    <h5>© Webflix 2021</h5>
-                </div>
 
-            </div>
         </div>
-            
-    </body>
+    </div>
+    </div>
+
+</body>
 
 </html>

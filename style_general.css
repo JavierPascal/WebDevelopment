@@ -12,7 +12,7 @@ html {
     padding: 2.5rem 15rem;
 }
 
-.navbar {
+.navbar-sticky {
     background-color: black; 
     position: fixed; 
     top: 0; 
@@ -22,7 +22,7 @@ html {
     z-index: 10000;
 }  
 
-.navbar a {
+.navbar-sticky a {
     float: left;
     display: block;
     color: white;
@@ -31,7 +31,7 @@ html {
     text-decoration: none;
 }  
 
-.navbar a:hover {
+.navbar-sticky a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -418,3 +418,4 @@ html {
     font-size: 54px;
     padding-top: 20px;
 }
+
