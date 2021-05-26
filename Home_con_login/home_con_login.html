@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <div class="navbar" id="navbar">
+    <div class="navbar-sticky" id="navbar-sticky">
       <a href="">
       <img style="border:0;" alt="WebFlix" src="../img/itech.svg" width="100" height="15">    
       <a href="">Home</a>
@@ -22,7 +22,7 @@
     </div>  
     <div>
       <ul>
-        <li><a class="active" href="#home">WebFlix</a></li>
+        <li><a class="active" href="#home">WebFlix</a></lin>
         <li><a href="#miscursos">Mis Cursos</a></li>
         <li><a href="#actividad">Actividad</a></li>
         <li><a href="#comunidad">Comunidad</a></li>
@@ -32,332 +32,380 @@
     <div class="page-container">
       <div class="section grid" style="background-color: #f2f2f2;">
         <div style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1">
-          <h3>Cursos recomendados.</h3>
+          <h1>Cursos recomendados</h1>
         </div>
 
         <div class="personcard">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
+          <img src="../img/html&css.jpg" alt="Avatar" style="width:100%">
           <div class="card-body">
             <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            <span style="color: rgb(61, 61, 61);"><h4>Un curso de Daniel Trejo</h4></span>
-            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
-            <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
+            <span style="color: rgb(61, 61, 61);">
+              <h4>Un curso de Miranda Santino</h4>
+            </span>
+            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando                técnicas básicas de desarollo web...</p>
+            <i style="margin-right: 5px;" class="far fa-email icon"> 148921</i>
             <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
-            
+
           </div>
           <div class="card-footer">
-            <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-            <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
+            <h5 style="color: rgb(255, 91, 91)">70% de descuento <span
+                style="text-decoration: line-through;">$799 MXN</span></h5>
+
+            <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    class="fas fa-shopping-cart"></i> $209 MXN</button>
           </div>
         </div>
         <div class="personcard">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
+          <img src="../img/Intro JS.jpg" alt="Avatar" style="width:100%">
           <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            <span style="color: rgb(61, 61, 61);"><h4>Un curso de Daniel Trejo</h4></span>
-            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
-            <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
-            <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
-            
+            <h3 style="margin-bottom: 10px;">Introducción a JavaScript</h3>
+            <span style="color: rgb(61, 61, 61);">
+              <h4>Un curso de Miguel Aramburo</h4>
+            </span>
+            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Iníciate en el lenguaje de programación                esencial para la creación de webs...</p>
+            <i style="margin-right: 5px;" class="far fa-email icon"> 7098</i>
+            <i class="far fa-thumbs-up icon"> 99% (226)</i>
+
           </div>
           <div class="card-footer">
-            <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-            <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
+            <h5 style="color: rgb(255, 91, 91)">78% de descuento <span
+                style="text-decoration: line-through;">$759 MXN</span></h5>
+
+            <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    class="fas fa-shopping-cart"></i> $169 MXN</button>
           </div>
         </div>
         <div class="personcard">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
+          <img src="../img/UX.jpeg" alt="Avatar" style="width:100%">
           <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            <span style="color: rgb(61, 61, 61);"><h4>Un curso de Daniel Trejo</h4></span>
-            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
-            <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
-            <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
-            
+            <h3 style="margin-bottom: 10px;">UX: Usabilidad y Experiencia de Usuario</h3>
+            <span style="color: rgb(61, 61, 61);">
+              <h4>Un curso de Salvador Ernesto</h4>
+            </span>
+            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza el diseño conceptual de una página
+                web...</p>
+            <i style="margin-right: 5px;" class="far fa-email icon"> 2619</i>
+            <i class="far fa-thumbs-up icon"> 75% (204)</i>
+
           </div>
           <div class="card-footer">
-            <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-            <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
+              <h5 style="color: rgb(255, 91, 91)">55% de descuento <span
+                      style="text-decoration: line-through;">$759 MXN</span></h5>
+
+              <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                      class="fas fa-shopping-cart"></i> $339 MXN</button>
           </div>
         </div>
         <div class="personcard">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
+          <img src="../img/django.jpg" alt="Avatar" style="width:100%">
           <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            <span style="color: rgb(61, 61, 61);"><h4>Un curso de Daniel Trejo</h4></span>
-            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">Realiza tu primera página web aplicando técnicas básicas de desarollo web...</p>
-            <i style="margin-right: 5px;" class="far fa-user icon"> 148921</i>
-            <i class="far fa-thumbs-up icon"> 97.5% (3265)</i>
-            
+            <h3 style="margin-bottom: 10px;">Desarrollo Web Backend en Python con Django Framework</h3>
+            <span style="color: rgb(61, 61, 61);">
+              <h4>Un curso de Emma Jane Palin</h4>
+            </span>
+            <p style="color:rgb(117, 117, 117); margin-bottom: 10px;">¿Estás listo para aprender Django y
+              controlar la Web Backend con Python como nunca habías imaginado?</p>
+            <i style="margin-right: 5px;" class="far fa-email icon"> 6908</i>
+            <i class="far fa-thumbs-up icon"> 98% (92)</i>
+
           </div>
           <div class="card-footer">
-              <h5 style="color: rgb(255, 91, 91)">70% de descuento <span style="text-decoration: line-through;">$799 MXN</span></h5>
-              <button class="button blue"><i class="fas fa-shopping-cart"></i> $209 MXN</button>
+            <h5 style="color: rgb(255, 91, 91)">71% de descuento <span
+                style="text-decoration: line-through;">$759 MXN</span></h5>
+
+            <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    class="fas fa-shopping-cart"></i> $219 MXN</button>
           </div>
         </div>
-        <button class="button" style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1; align-self: center; justify-self: center;">Ver más cursos de WebFlix --></button>
-      
       </div>
+    
       <div class="section grid-persons" style="background-color: #111111;">
         <div style="grid-column-start: span 5; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1">
-          <h2>Novedades y destacados.</h2>
+          <h2>Novedades y destacados</h2>
         </div>
-        <div class="personcard two">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            </div>
+        <div class="novedades">
+          <div class="card-novedades">
+            <img src="../img/p11-img.jpg" alt="Avatar" style="width:100%">
+          </div>
+          <div class="card-novedades type">
+            <h5 style="margin-bottom: 10px; background-color: white;">Creación de branding animado en 2D y 3D</h5>
+          </div>
         </div>
-        <div class="personcard two">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            </div>
+        <div class="novedades">
+          <div class="card-novedades">
+            <img src="../img/p12-img.jpg" alt="Avatar" style="width:100%">
+          </div>
+          <div class="card-novedades type">
+            <h5 style="margin-bottom: 1px; background-color: white;">Diseño del universo gráfico de una marca</h5> 
+          </div>
         </div>
-        <div class="personcard two">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            </div>
+        <div class="novedades">
+          <div class="card-novedades">
+            <img src="../img/p13-img.png" alt="Avatar" style="width:100%">
+          </div>
+          <div class="card-novedades type">
+            <h5 style="margin-bottom: 10px; background-color: white;">Creación de una tienda online en WordPress</h5>
+          </div>
         </div>
-        <div class="personcard two">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h3 style="margin-bottom: 10px;">Introducción a HTML y CSS</h3>
-            </div>
+        <div class="novedades">
+          <div class="card-novedades">
+            <img src="../img/p14-img.png" alt="Avatar" style="width:100%">
+          </div>
+          <div class="card-novedades type">
+            <h5 style="margin-bottom: 10px; background-color: white;">Introducción al desarrollo web con PHP</h5>
+          </div>
         </div>
       </div>
 
 
       <div class="section grid-persons" style="background-color: #f2f2f2;">
         <div style="grid-column-start: span 5; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1">
-          <h3>Cursos por categorías.</h3>
+          <h3>Cursos por categorías</h3>
         </div>
         <div class="cardcategory">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Categoría</h3>
+          <img src="../img/tecnologia.png" alt="Avatar" style="width:100%">
+          <div class="cardcategory type">
+            <h3 style="margin-bottom: 10px;">Tecnología</h3>
           </div>
         </div>
         <div class="cardcategory">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Categoría</h3>
+          <img src="../img/diseño.png" alt="Avatar" style="width:100%">
+          <div class="cardcategory type">
+            <h3 style="margin-bottom: 10px;">Diseño</h3>
           </div>
         </div>
         <div class="cardcategory">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Categoría</h3>
-          </div>
-        </div>
-        <div class="cardcategory">
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h3 style="margin-bottom: 10px;">Categoría</h3>
+          <img src="../img/ilustracion.png" alt="Avatar" style="width:100%">
+          <div class="cardcategory type">
+            <h3 style="margin-bottom: 10px;">Ilustracion</h3>
           </div>
         </div>
       </div>
 
       <div class="section grid-persons" style="background-color: #111111;">
         <div style="grid-column-start: span 5; grid-column-end: span 5; grid-row-start: span 1; grid-row-end: span 1">
-          <h2>Personas que quizás conozcas.</h2>
+          <h2>Personas que quizás conozcas</h2>
         </div>
         <div class="personcard two">
           <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
+              <img src="../img/p1-avatar.jpg" alt="persona">
           </div>
           <div class="card-person type">
-            <h5>PROFESOR</h5>
+              <h5>PROFESOR</h5>
           </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
+          <img src="../img/p1-top-img.jpg" alt="Avatar" style="width:100%">
           <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
+              <h4>Edu Gómez</h4>
+              <span style="color: grey;">
+                  <h5>Madrid, España</h5>
+              </span>
           </div>
           <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_1" onclick="seguir(this.id)">+ seguir</button>
+              <h5>40477 seguidores</h5>
+              <button class="button" id="follow_1" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
           </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-            <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_2" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_3" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-            <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>            
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_4" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-            <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_5" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_6" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-              <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_7" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_8" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-          <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_9" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-        <div class="personcard two">
-          <div class="card-person">
-            <img src="../img/person.jpeg" alt="persona">
-          </div>
-          <div class="card-person type">
-            <h5>PROFESOR</h5>
-          </div>
-            <img src="../img/curso.png" alt="Avatar" style="width:100%">
-          <div class="card-body">
-            <h4>Andrea Aguilar</h4>
-            <span style="color: grey;"><h5>Estado de México</h5></span>
-          </div>
-          <div class="card-footer">
-            <h5>3890 seguidores</h5>
-            <button class="button" id="follow_10" onclick="seguir(this.id)">+ seguir</button>
-          </div>
-        </div>
-
       </div>
-      <div class="section grid footer">   
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p2-avatar.jpg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p2-top-img.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Ruano Rivera</h4>
+              <span style="color: grey;">
+                  <h5>Bogotá, Colombia</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>2794 seguidores</h5>
+              <button class="button" id="follow_2" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p3-img-avatar.jpg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p3-top-img.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Gonzalo Ibáñez</h4>
+              <span style="color: grey;">
+                  <h5>Santiago, Chile</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>2564 seguidores</h5>
+              <button class="button" id="follow_3" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p4-avatar.jpeg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p4-img-top.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Willian Santiago</h4>
+              <span style="color: grey;">
+                  <h5>Londrina, Brasil</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>11587 seguidores</h5>
+              <button class="button" id="follow_4" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p5-avatar.jpg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p5-img-top.png" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Andrea Aguilar</h4>
+              <span style="color: grey;">
+                  <h5>Estado de México, México</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>50421 seguidores</h5>
+              <button class="button" id="follow_5" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p6-img-avatar.jpg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p6-img-top.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Sole Otero</h4>
+              <span style="color: grey;">
+                  <h5>Angulema, Francia</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>3890 seguidores</h5>
+              <button class="button" id="follow_6" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p7-avatar.jpeg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p7-img-top.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Galamot Shaku</h4>
+              <span style="color: grey;">
+                  <h5>Ciudad de México, México</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>2918 seguidores</h5>
+              <button class="button" id="follow_7" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p8-avatar.png" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p8-img-top.png" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Pamela Barbieri</h4>
+              <span style="color: grey;">
+                  <h5>Buenos Aires, Argentina</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>13241 seguidores</h5>
+              <button class="button" id="follow_8" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p9-avatar.jpg" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p9-img-top.jpg" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Steve Simpsonr</h4>
+              <span style="color: grey;">
+                  <h5>Dublín, Irlanda</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>1134 seguidores</h5>
+              <button class="button" id="follow_9" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      <div class="personcard two">
+          <div class="card-person">
+              <img src="../img/p10-avatar.png" alt="persona">
+          </div>
+          <div class="card-person type">
+              <h5>PROFESOR</h5>
+          </div>
+          <img src="../img/p10-img-top.png" alt="Avatar" style="width:100%">
+          <div class="card-body">
+              <h4>Felipe Novoa (FEN)</h4>
+              <span style="color: grey;">
+                  <h5>Bogotá, Colombia</h5>
+              </span>
+          </div>
+          <div class="card-footer">
+              <h5>4435 seguidores</h5>
+              <button class="button" id="follow_10" onclick="seguir(this.id)" data-toggle="modal"
+                  data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
+          </div>
+      </div>
+      </div>
+      <div class="section grid footer">
         <div class="footer-column">
           <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
           <ul style="list-style-type:none;">
-            <li><a href="">HTML y CSS</a></li>
-            <li><a href="">JavaScript</a></li>
-            <li><a href="">MySQL</a></li>
-          </ul>  
+            <li><a href="">Tecnología</a></li>
+            <li><a href="">Ilustración</a></li>
+            <li><a href="">Diseño</a></li>
+          </ul>
         </div>
-        <div class="footer-column">
-          <h4 style="margin-bottom: 20px;">CATEGORIAS</h4>
-          <ul style="list-style-type:none;">
-            <li><a href="">HTML y CSS</a></li>
-            <li><a href="">JavaScript</a></li>
-            <li><a href="">MySQL</a></li>
-          </ul>  
-        </div>
+      </div>
+      <div>
+
         <div class="footer-column" style="grid-column-start: span 4; grid-column-end: span 4; grid-row-start: span 1; grid-row-end: span 1; margin-top:30px">
           <h5>© Webflix 2021</h5>
         </div>
 
+      </div>
     </div>
-    </div>
+  </div>
 
   </body>
 </html>
