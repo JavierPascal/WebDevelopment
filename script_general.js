@@ -2,6 +2,7 @@ var username
 
 window.onload = function(){
     username = localStorage.getItem("username")
+    document.getElementById('person').innerHTML = username;
 }
 
 function save_user(){
