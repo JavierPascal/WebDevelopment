@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/996973c893.js"></script>
-    <!-- Boostrap for the modal -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
     <div class="navbar-sticky" id="navbar-sticky">
-        <a href="">
-            <img style="border:0;" alt="WebFlix" src="../img/itech.svg" width="100" height="15">
-            <a href="">Home</a>
-            <a href="">Cursos</a>
-            <a href="">Prueba</a>
+        <div class="nav-content">
+            <div>
+                <a href="">
+                    <img style="border:0;" alt="WebFlix" src="../img/itech.svg" width="100" height="15">
+                    <a href="">Home</a>
+                    <a href="">Cursos</a>
+                    <a href="">Prueba</a>
+            </div>
+            <div>
+                <a href="../login/login.html">ENTRAR</a>
+            </div>
+        </div>
     </div>
     <div class="page-container">
         <div class="section main-image">
@@ -33,9 +37,8 @@
                 <h3 style="color: white;">Aprende con los mejores profesionales y forma partede la mayor comunidad para
                     desarrolladores web.</h3>
                 <div class="main-img-buttons">
-                    <button class="button big-white" onClick="document.getElementById('cursos').scrollIntoView();">Ver
-                        los cursos</button>
-                    <button class="button big-white" data-toggle="modal" data-target="#myModal">Crea una cuenta</button>
+                    <button class="button big-white" onClick="document.getElementById('cursos').scrollIntoView();">Ver los cursos</button>
+                    <button class="button big-white" >Crea una cuenta</button>
                 </div>
             </div>
         </div>
@@ -62,7 +65,7 @@
                     <h5 style="color: rgb(255, 91, 91)">70% de descuento <span
                             style="text-decoration: line-through;">$799 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $209 MXN</button>
                 </div>
             </div>
@@ -83,7 +86,7 @@
                     <h5 style="color: rgb(255, 91, 91)">78% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $169 MXN</button>
                 </div>
             </div>
@@ -104,7 +107,7 @@
                     <h5 style="color: rgb(255, 91, 91)">55% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $339 MXN</button>
                 </div>
             </div>
@@ -125,7 +128,7 @@
                     <h5 style="color: rgb(255, 91, 91)">71% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $219 MXN</button>
                 </div>
             </div>
@@ -146,7 +149,7 @@
                     <h5 style="color: rgb(255, 91, 91)">70% de descuento <span
                             style="text-decoration: line-through;">$799 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $209 MXN</button>
                 </div>
             </div>
@@ -167,7 +170,7 @@
                     <h5 style="color: rgb(255, 91, 91)">75% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $189 MXN</button>
                 </div>
             </div>
@@ -188,7 +191,7 @@
                     <h5 style="color: rgb(255, 91, 91)">78% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $169 MXN</button>
                 </div>
             </div>
@@ -209,7 +212,7 @@
                     <h5 style="color: rgb(255, 91, 91)">38% de descuento <span
                             style="text-decoration: line-through;">$759 MXN</span></h5>
 
-                    <button class="button blue" data-toggle="modal" data-target="#myModal"><i
+                    <button class="button blue" ><i
                             class="fas fa-shopping-cart"></i> $469 MXN</button>
                 </div>
             </div>
@@ -308,7 +311,7 @@
                 <div class="card-footer">
                     <h5>40477 seguidores</h5>
                     <button class="button" id="follow_1" onclick="seguir(this.id)" data-toggle="modal"
-                        data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
+                        data-target="#myModal" >+ seguir</button>
                 </div>
             </div>
             <div class="personcard two">
@@ -488,7 +491,7 @@
                 <div class="card-footer">
                     <h5>4435 seguidores</h5>
                     <button class="button" id="follow_10" onclick="seguir(this.id)" data-toggle="modal"
-                        data-target="#myModal" data-toggle="modal" data-target="#myModal">+ seguir</button>
+                        data-target="#myModal" >+ seguir</button>
                 </div>
             </div>
 
@@ -518,47 +521,6 @@
             </div>
 
         </div>
-        <!-- Trigger the modal with a button -->
-        <button data-toggle="modal" data-target="#myModal">Open Large Modal</button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">WebFlix</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h4 style="margin-bottom: 20px;">Entra con tu correo:</h4>
-                        <form>
-                            <div class="form-group">
-                                <label for="email" class="col-form-label">email:</label>
-                                <input type="text" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="username" class="col-form-label">username:</label>
-                                <input type="text" class="form-control" id="username">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="col-form-label">password:</label>
-                                <input type="password" class="form-control" id="password"></input>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="save_user()">Entra</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
     </div>
 
 </body>

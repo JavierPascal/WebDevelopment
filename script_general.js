@@ -1,23 +1,18 @@
-var email, username
+var username
 
 window.onload = function(){
-    email = localStorage.getItem("email")
     username = localStorage.getItem("username")
 }
 
-
 function save_user(){
     username = document.getElementById('username').value;
-    email = document.getElementById('email').value;
     
-
-    if (username == "" || email == ""){
+    if (username == ""){
         alert("all fields must be filled out");
         return false;
     }
 
     localStorage.setItem("username", username);
-    localStorage.setItem("email", email);
     location.href = "../Home_con_login/home_con_login.html"
 
 }
@@ -35,7 +30,7 @@ window.onscroll = function() {
 }
 
 /* Change color of button on click */
-function seguir(id) // no ';' here
+function seguir(id)
 {
 
     var elem = document.getElementById(id);
